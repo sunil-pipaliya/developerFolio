@@ -21,15 +21,15 @@
     "sass": "^1.32.8"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "start": "npx serve -s build",
-    "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
-    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
-  },
+  "predeploy": "npm run build",
+  "start": "serve -s build -l 8080",
+  "build": "node fetch.js && react-scripts build",
+  "deploy": "gh-pages -b master -d build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+  "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
+},
   "eslintConfig": {
     "extends": "react-app"
   },
