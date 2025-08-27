@@ -4,5 +4,9 @@ repos:
   hooks:
     - id: prettier
       files: ".*.(json|js|css)"
+- name: Set up Node.js version
+  uses: actions/setup-node@v3
+  with:
+    node-version: '18.x'
 
 
