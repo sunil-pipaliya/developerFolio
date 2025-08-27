@@ -13,4 +13,10 @@ repos:
     npm install
     npm run build
 
+- name: Deploy to Azure Web App
+  uses: azure/myappestaus
+  with:
+    app-name: 'myappestaus'
+    slot-name: 'Production'
+    package: build
 
